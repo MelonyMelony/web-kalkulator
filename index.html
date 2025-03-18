@@ -31,7 +31,42 @@
         }
 
         document.querySelector('#fakultet button')
-            .addEventListener('click', e => regnUt(e))</script>
+            .addEventListener('click', e => regnUt(e))
+            
+            import { fizzBuzz } from './fizzbuzz.js';
+
+function sjekkFizzBuzz(evt) {
+    evt.preventDefault();
+
+    const input = document.querySelector('#fizzbuzz input');
+    const output = document.querySelector('#fizzbuzz .resultat2');
+
+    const tall = parseInt(input.value);
+
+    if (isNaN(tall)) {
+        output.textContent = "Skriv inn et gyldig tall";
+    } else {
+        output.textContent = fizzBuzz(tall);
+    }
+}
+
+document.querySelector('#fizzbuzz button')
+    .addEventListener('click', sjekkFizzBuzz);
+    
+            </script>
+
+            
+
+    <div id="fizzbuzz">
+        <form>
+
+            <input name="tall2" placeholder="Skriv inn et tall" type="number">
+            <button>Fizzbuzz</button>
+
+            <p>Resultatet er: <span class="resultat2"></span></p>
+
+        </form>
+    </div>
 
 </body>
 </html>
