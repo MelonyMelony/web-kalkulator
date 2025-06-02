@@ -1,0 +1,15 @@
+body {
+    margin-left: 0;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    width: 100px; 
+    height: 100px; 
+    font-size: large;
+}
+
+p {
+    font-size: 10px;
+}
